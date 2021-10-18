@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 361611023}
   m_Layer: 5
   m_Name: Image (2)
-  m_TagString: Untagged
+  m_TagString: Item UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 682798630}
   m_Layer: 5
   m_Name: Image (6)
-  m_TagString: Untagged
+  m_TagString: Item UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1054,6 +1054,7 @@ GameObject:
   - component: {fileID: 1084294393}
   - component: {fileID: 1084294397}
   - component: {fileID: 1084294398}
+  - component: {fileID: 1084294399}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1178,6 +1179,29 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1084294399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084294392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6009c2c54f869b4b8258a3bd6108ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RangeRadius: 32.9
+  FOVAngle: 24
+  ItemMask:
+    serializedVersion: 2
+    m_Bits: 64
+  WallMask:
+    serializedVersion: 2
+    m_Bits: 128
+  directionToItem: {x: 0, y: 0, z: 0}
+  ItemInView: {fileID: 0}
+  ItemTransform: {fileID: 0}
 --- !u!1 &1253536371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1215,7 @@ GameObject:
   - component: {fileID: 1253536373}
   m_Layer: 5
   m_Name: Image (5)
-  m_TagString: Untagged
+  m_TagString: Item UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1436,7 +1460,7 @@ GameObject:
   - component: {fileID: 1521570351}
   m_Layer: 5
   m_Name: Image (3)
-  m_TagString: Untagged
+  m_TagString: Item UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1511,7 +1535,7 @@ GameObject:
   - component: {fileID: 1575867828}
   m_Layer: 5
   m_Name: Image (4)
-  m_TagString: Untagged
+  m_TagString: Item UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HealthPickup : Interactables
 {
-    public override void Action(Interact Interacables)
+    public override void Action(Interact Interactable)
     {
         Debug.Log("HP");
-        Interact.ItemStack.Push(this);
+        Interactable.ItemStack.Push(this);
     }
 
-    public override void Use(Interact Interacables)
+    public override void Use(Interact Interacable)
     {
         Debug.Log("HP Use");
     }

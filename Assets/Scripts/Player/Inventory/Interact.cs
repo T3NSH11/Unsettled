@@ -14,7 +14,8 @@ public class Interact : MonoBehaviour
     public GameObject ItemInView;
     public Transform ItemTransform;
     public Interactables ActiveItem;
-    public static Stack<Interactables> ItemStack;
+    public Stack<Interactables> ItemStack;
+    //public static Stack<GameObject> ItemIcons;
 
     private void Start()
     {
