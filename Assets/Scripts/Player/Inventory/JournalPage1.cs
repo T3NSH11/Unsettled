@@ -9,7 +9,7 @@ public class JournalPage : Interactables
         Debug.Log("JP");
     }
 
-    public override void Use(Inventory Interacables)
+    public override void Use(Interact Interacables)
     {
         Debug.Log("JP Use");
     }

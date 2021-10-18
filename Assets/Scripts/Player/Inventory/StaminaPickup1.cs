@@ -9,7 +9,7 @@ public class StaminaPickup : Interactables
         Debug.Log("ST");
     }
 
-    public override void Use(Inventory Interacables)
+    public override void Use(Interact Interacables)
     {
         Debug.Log("ST Use");
     }

@@ -9,7 +9,7 @@ public class Interactables
         
     }
 
-    public virtual void Use(Inventory Interacables)
+    public virtual void Use(Interact Interacables)
     {
         
     }

@@ -14,10 +14,11 @@ public class Interact : MonoBehaviour
     public GameObject ItemInView;
     public Transform ItemTransform;
     public Interactables ActiveItem;
+    public static Stack<Interactables> ItemStack;
 
     private void Start()
     {
-
+        ItemStack = new Stack<Interactables>();
     }
 
     private void Update()
@@ -46,6 +47,11 @@ public class Interact : MonoBehaviour
                 ActiveItem.Action(this);
                 Destroy(ItemInView);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            ItemStack.Pop().Use(this);
         }
     }
 
