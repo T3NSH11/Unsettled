@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class StaminaPickup : Interactables
 {
-    public override void Action(Interact Interacables)
+    public override void Action(Interact Interactable)
     {
         Debug.Log("ST");
+        Interactable.ItemStack.Push(this);
+        
     }
 
     public override void Use(Interact Interacables)

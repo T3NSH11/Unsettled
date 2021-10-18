@@ -15,7 +15,9 @@ public class Interact : MonoBehaviour
     public Transform ItemTransform;
     public Interactables ActiveItem;
     public Stack<Interactables> ItemStack;
-    //public static Stack<GameObject> ItemIcons;
+    public Stack<GameObject> ItemUI;
+    public RectTransform UsabeItemUITransform;
+    public RectTransform ItemUITransform;
 
     private void Start()
     {
@@ -50,7 +52,7 @@ public class Interact : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && ItemStack.Count != 0)
         {
             ItemStack.Pop().Use(this);
         }
@@ -73,7 +75,6 @@ public class Interact : MonoBehaviour
                 if (!Physics.Raycast(transform.position, directionToItem, distanceToItem, WallMask))
                 {
                     ItemInView = CollidersInRange[0].gameObject;
-                    //Debug.Log(ItemInView.name);
                 }
             }
         }
