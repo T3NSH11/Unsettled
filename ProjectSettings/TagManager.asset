@@ -8,6 +8,7 @@ TagManager:
   - StaminaPickup
   - JournalPage
   - Item UI
+  - JesterSpawnPoint
   layers:
   - Default
   - TransparentFX
