@@ -9,6 +9,8 @@ TagManager:
   - JournalPage
   - Item UI
   - JesterSpawnPoint
+  - CheckpointsManager
+  - ChckCount
   layers:
   - Default
   - TransparentFX
