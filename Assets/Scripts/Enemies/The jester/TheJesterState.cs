@@ -6,6 +6,6 @@ public class TheJesterState
 {
     public virtual void JesterStateUpdate(TheJesterStateMachine TheJesterState)
     {
-
+        
     }
 }

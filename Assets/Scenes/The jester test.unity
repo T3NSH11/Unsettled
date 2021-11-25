@@ -14665,6 +14665,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JesterSpawnPoints: []
+  ActiveSpawnPoints: []
+  TheJester: {fileID: 450500987}
+  Player: {fileID: 0}
+  JesterLoc: 0
+  JesterSpeed: 4.07
+  JesterTimer: 0
+  JesterRange: 0
+  JesterAttackRange: 0
 --- !u!1001 &451825679
 PrefabInstance:
   m_ObjectHideFlags: 0
