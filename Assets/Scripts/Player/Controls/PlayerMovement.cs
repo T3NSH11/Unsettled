@@ -6,13 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 12f;
-    public float gravity = -9.81f;
+    public float speed;
+    public float SprintSpeed;
+    float MoveSpeed = 5;
+    public float gravity;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public float jumpdist;
     public GameObject flash;
-    public bool flashOn = false;
 
     public LayerMask groundMask;
     Vector3 velocity;
@@ -35,12 +36,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 30f;
+            MoveSpeed = SprintSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 12f;
+            MoveSpeed = speed;
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -60,16 +61,17 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = jumpdist;
         }
 
-        if(Input.GetKeyDown(KeyCode.Q) && flashOn == false)
+        if(Input.GetKeyDown(KeyCode.Q))
         {
-            flash.GetComponent<Light>().enabled = true;
-            flashOn = true;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q) && flashOn == true)
-        {
-            flash.GetComponent<Light>().enabled = false;
-            flashOn = false;
+            if(flash.GetComponent<Light>().enabled == false)
+            {
+                flash.GetComponent<Light>().enabled = true;
+            }
+            else
+            {
+                flash.GetComponent<Light>().enabled = false;
+            }
+            
         }
 
         float x = Input.GetAxis("Horizontal");
@@ -77,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * MoveSpeed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
 
