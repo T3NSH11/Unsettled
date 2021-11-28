@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public float jumpdist;
+    public GameObject flash;
+    public bool flashOn = false;
 
     public LayerMask groundMask;
     Vector3 velocity;
@@ -30,10 +32,12 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
+
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = 30f;
         }
+
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = 12f;
@@ -44,14 +48,28 @@ public class PlayerMovement : MonoBehaviour
             controller.height = 0.5f;
             speed = 5f;
         }
+
         if (Input.GetKeyUp(KeyCode.C))
         {
             controller.height = 2.0f;
             speed = 12f;
         }
+
         if(isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             velocity.y = jumpdist;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Q) && flashOn == false)
+        {
+            flash.GetComponent<Light>().enabled = true;
+            flashOn = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q) && flashOn == true)
+        {
+            flash.GetComponent<Light>().enabled = false;
+            flashOn = false;
         }
 
         float x = Input.GetAxis("Horizontal");
