@@ -10,6 +10,7 @@ public class Follow : TheJesterState
         if (TheJesterState.JesterTimer > TheJesterState.JesterSpeed)
         {
             TheJesterState.TheJester.transform.position = TheJesterState.ActiveSpawnPoints[Random.Range(0, TheJesterState.ActiveSpawnPoints.Length)].transform.position;
+            TheJesterState.JesterTimer = 0;
         }
 
         if (Vector3.Distance(TheJesterState.TheJester.transform.position, TheJesterState.Player.transform.position) < TheJesterState.JesterAttackRange)

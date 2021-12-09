@@ -26,6 +26,7 @@ public class TheJesterStateMachine : MonoBehaviour
         CurrentState.JesterStateUpdate(this);
         Debug.Log(CurrentState);
         JesterTimer += Time.deltaTime;
+        Debug.Log(CurrentState);
     }
 
     public void SwitchState(TheJesterState JesterState)

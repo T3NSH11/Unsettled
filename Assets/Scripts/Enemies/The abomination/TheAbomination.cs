@@ -44,7 +44,6 @@ public class TheAbomination : MonoBehaviour
 
         DistanceToLost = Vector3.Distance(gameObject.transform.position, PlayerLostLoc);
         currentstate.AbominationStateUpdate(this);
-        Debug.Log(currentstate);
     }
     
     public void SwitchState(AbominationState abominationState)
