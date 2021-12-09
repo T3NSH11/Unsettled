@@ -6,7 +6,6 @@ public class Roam : TheJesterState
 {
     public override void JesterStateUpdate(TheJesterStateMachine TheJesterState)
     {
-        TheJesterState.JesterLoc = Random.Range(0, TheJesterState.JesterSpawnPoints.Length);
         if (TheJesterState.JesterTimer > TheJesterState.JesterSpeed)
         {
             TheJesterState.TheJester.transform.position = TheJesterState.JesterSpawnPoints[TheJesterState.JesterLoc].transform.position;

@@ -9,6 +9,7 @@ public class TheJesterStateMachine : MonoBehaviour
     public Collider[] ActiveSpawnPoints;
     public GameObject TheJester;
     public GameObject Player;
+    public GameObject JumpScare;
     public LayerMask spawnlayer;
     public int JesterLoc;
     public float JesterSpeed;
@@ -24,6 +25,8 @@ public class TheJesterStateMachine : MonoBehaviour
     void Update()
     {
         CurrentState.JesterStateUpdate(this);
+        ActiveSpawnPoints = Physics.OverlapSphere(Player.transform.position, 15, spawnlayer);
+        JesterLoc = Random.Range(0, JesterSpawnPoints.Length);
         Debug.Log(CurrentState);
         JesterTimer += Time.deltaTime;
         Debug.Log(CurrentState);
