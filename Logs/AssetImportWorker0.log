@@ -139,3 +139,4 @@ Received Import Request.
 Start importing Assets/Visual assets/Game objects/Monster/Ch25_nonPBR@Walking.fbx using Guid(88ad16c833645d240b9042508d6d9b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227515f2b22d9d4765a0c07a3022df17') in 0.234920 seconds 
   Import took 0.241929 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

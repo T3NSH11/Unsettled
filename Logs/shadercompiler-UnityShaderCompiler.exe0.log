@@ -127,3 +127,4 @@ Cmd: preprocess
   error: 1 plat 25 at D:/Work/Projects/Unsettled/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/ShaderLibrary/Macros.hlsl(229): 'TRANSFORM_TEX': macro redefinition. Previous definition found at D:/Work/Unity/2020.3.20f1/Editor/Data/CGIncludes/UnityCG.cginc:442.
  ok=1 outsize=525
 
+Cmd: shutdown
