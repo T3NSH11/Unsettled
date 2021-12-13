@@ -1,520 +1,126 @@
 Using pre-set license
-Built from '2021.1/staging' branch; Version is '2021.1.11f1 (4d8c25f7477e) revision 5082149'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 32675 MB
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16282 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
- COMMAND LINE ARGUMENTS:
-D:\2021.1.11f1\Editor\Unity.exe
+COMMAND LINE ARGUMENTS:
+D:\Work\Unity\2020.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Mishoo/Documents/GitHub/Unsettled
+D:/Work/Projects/Unsettled
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1204
-Successfully changed project path to: C:/Users/Mishoo/Documents/GitHub/Unsettled
-C:/Users/Mishoo/Documents/GitHub/Unsettled
+60691
+Successfully changed project path to: D:/Work/Projects/Unsettled
+D:/Work/Projects/Unsettled
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 73.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 61.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.1.11f1 (4d8c25f7477e)
-[Subsystems] Discovering subsystems at path D:/2021.1.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Mishoo/Documents/GitHub/Unsettled/Assets
-GfxDevice: creating device client; threaded=0; jobified=0
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path D:/Work/Unity/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Work/Projects/Unsettled/Assets
+GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2486)
-    Vendor:   NVIDIA
-    VRAM:     8050 MB
-    Driver:   27.21.14.6140
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   30.0.14.9709
 Initialize mono
-Mono path[0] = 'D:/2021.1.11f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2021.1.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2021.1.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Mono path[0] = 'D:/Work/Unity/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Work/Unity/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Work/Unity/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2021.1.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/2021.1.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001393 seconds.
+Register platform support module: D:/Work/Unity/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Work/Unity/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001076 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 66.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 79.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.214 seconds
+- Completed reload, in  1.830 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1214ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (1831ms)
+		BeginReloadAssembly (45ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (413ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (500ms)
+			LoadAssemblies (44ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (160ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (185ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (220ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (66ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (86ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004808 seconds.
+Registered in 0.002884 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 60.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 64.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.169 seconds
+- Completed reload, in  1.481 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1169ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (967ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (423ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3347 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.8 MB.
-System memory in use after: 141.0 MB.
-
-Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 3796.
-Total: 6.168100 ms (FindLiveObjects: 0.332200 ms CreateObjectMapping: 0.082700 ms MarkObjects: 5.614200 ms  DeleteObjects: 0.138000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Visual assets/greybox 2.asset
-  artifactKey: Guid(cb9472e3396509d4f9aa74cbc7bab21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/greybox 2.asset using Guid(cb9472e3396509d4f9aa74cbc7bab21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Fir_Tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-
- -> (artifact id: 'e21e570b3e71c73af9d5888c65e9cd80') in 0.165287 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Visual assets/TerrainData_74106893-aaa1-44bc-9b41-9e3650546b3f.asset
-  artifactKey: Guid(b9f33826c0edf6e4db05e28e7a6e5644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/TerrainData_74106893-aaa1-44bc-9b41-9e3650546b3f.asset using Guid(b9f33826c0edf6e4db05e28e7a6e5644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46d8d87214ddba792590e3563bc73e8') in 0.019644 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 65.916767 seconds.
-  path: Assets/Visual assets/Map Assets/Trees/Free_Trees/Prefabs/Fir_Tree.prefab
-  artifactKey: Guid(19682540d8a014522a319b1cf788aee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Map Assets/Trees/Free_Trees/Prefabs/Fir_Tree.prefab using Guid(19682540d8a014522a319b1cf788aee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1349d1ef866452092b4ce3a715d61ca') in 0.199126 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.288855 seconds.
-  path: Assets/Visual assets/Game objects/Checkpoint.prefab
-  artifactKey: Guid(f9830fd130f9b5643b26bba4cf96ff38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Game objects/Checkpoint.prefab using Guid(f9830fd130f9b5643b26bba4cf96ff38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962497a82c3c626741757fbc5e140248') in 0.021391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Visual assets/Game objects/energy drink can.fbx
-  artifactKey: Guid(2ba78f24f698d744a988704d079d3235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Game objects/energy drink can.fbx using Guid(2ba78f24f698d744a988704d079d3235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d4fb6ab58efb48e917a6a8202549cde') in 0.262389 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.946734 seconds.
-  path: Assets/Visual assets/Slum Houses
-  artifactKey: Guid(1de0e0e9df7d57a47ac5d8241a85891b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses using Guid(1de0e0e9df7d57a47ac5d8241a85891b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14855b968aad56cd2086d264a26d47b') in 0.007311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.048416 seconds.
-  path: Assets/Visual assets/Slum Houses/Test.mat
-  artifactKey: Guid(09215adfbb8a5f649a919f4b899a4ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Test.mat using Guid(09215adfbb8a5f649a919f4b899a4ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e78934bd71d66042f1e9562cfbf275') in 0.015046 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.456018 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab
-  artifactKey: Guid(25c6e12a17bc45741aacfdc3d8154f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab using Guid(25c6e12a17bc45741aacfdc3d8154f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770ea8f9f6d437fa9c29b99c5c20ce55') in 0.006828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.056416 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Metal strip 1.prefab
-  artifactKey: Guid(7384b2ca5be9363438029bc7e68bf6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Metal strip 1.prefab using Guid(7384b2ca5be9363438029bc7e68bf6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38b56bab0d37d701188776f781eda04') in 0.021217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Tin sheet 2.prefab
-  artifactKey: Guid(3f9e77697315c1e4fbf338fd8ec6bfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Tin sheet 2.prefab using Guid(3f9e77697315c1e4fbf338fd8ec6bfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893f73f851e12a063d154e34ebbb0b41') in 0.021410 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Support 3.prefab
-  artifactKey: Guid(581b4cd7643ad064198e91b3674a0994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Support 3.prefab using Guid(581b4cd7643ad064198e91b3674a0994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9133c982fdfae3f7fc8f2fa22eb0c58d') in 0.018853 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Support 5.prefab
-  artifactKey: Guid(ebcbc513ddf55ec49a50239e2a55a949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Support 5.prefab using Guid(ebcbc513ddf55ec49a50239e2a55a949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76aa3e41cb03633edd399236d5418d77') in 0.017592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Support 4.prefab
-  artifactKey: Guid(c89ef5bbaf1925f47968d24a9cc994b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Support 4.prefab using Guid(c89ef5bbaf1925f47968d24a9cc994b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9036771fcdecee274a238bb80beb7f40') in 0.018638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Metal strip 2.prefab
-  artifactKey: Guid(5f069d9899885814580f21a64bf41376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Metal strip 2.prefab using Guid(5f069d9899885814580f21a64bf41376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6c52c33f21e511b69aeb57a3966125') in 0.016636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Support 1.prefab
-  artifactKey: Guid(42928a1f152c7434d97aa30e355a53ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Support 1.prefab using Guid(42928a1f152c7434d97aa30e355a53ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8eb3e0892b62bea3e53de0b380d3854') in 0.021099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Support 2.prefab
-  artifactKey: Guid(f30295e044b9c714a800f5484850bac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Support 2.prefab using Guid(f30295e044b9c714a800f5484850bac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5777404e7189dbcf5479b81b75297b') in 0.023342 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Support 6.prefab
-  artifactKey: Guid(1bf7f86dd4aa4744a8fe6d8652dcfca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Support 6.prefab using Guid(1bf7f86dd4aa4744a8fe6d8652dcfca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730f84e284e32d6053a9718eac1011fd') in 0.017545 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Metal strip 4.prefab
-  artifactKey: Guid(ccad0ff4fe94ab44f9771d845aae8432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Metal strip 4.prefab using Guid(ccad0ff4fe94ab44f9771d845aae8432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1492c8b901d820b7d1a063959d4b38') in 0.020111 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Tin sheet 3.prefab
-  artifactKey: Guid(c6d0d9d95fade554587b8c360c707fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Tin sheet 3.prefab using Guid(c6d0d9d95fade554587b8c360c707fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0acb1703c7fbb4d1dad0345026c1d8') in 0.017786 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Tin sheet 4.prefab
-  artifactKey: Guid(2223ad3e2e7c96a4daf5453d515f5dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Tin sheet 4.prefab using Guid(2223ad3e2e7c96a4daf5453d515f5dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac6e7e1a9966a57e523a69666ceb7a6') in 0.019645 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Tin sheet 1.prefab
-  artifactKey: Guid(9d8a37d24374734478cb7c8788efc4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Tin sheet 1.prefab using Guid(9d8a37d24374734478cb7c8788efc4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33232574b983950ff55bc188a1f7dac') in 0.021456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Metal strip 3.prefab
-  artifactKey: Guid(8d7126d1fc2fd5f4ab5e185c137170ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Metal strip 3.prefab using Guid(8d7126d1fc2fd5f4ab5e185c137170ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee0b83f22fd6db722289f5f90ac5d0a') in 0.017796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.070812 seconds.
-  path: Assets/Visual assets/Slum Houses/Models
-  artifactKey: Guid(ad768e9c2a304814195abe13e9b10a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models using Guid(ad768e9c2a304814195abe13e9b10a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0239938c5484f454b94a51e782e4273') in 0.007684 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.044206 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Metal strip 1.fbx
-  artifactKey: Guid(e7731372d3454354fa9ffb59080fb274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Metal strip 1.fbx using Guid(e7731372d3454354fa9ffb59080fb274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c192134629975f297b2bba2d581c3e') in 0.020815 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Tin sheet 3.fbx
-  artifactKey: Guid(124d6cbcc91a45f488d7bb75baa217a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Tin sheet 3.fbx using Guid(124d6cbcc91a45f488d7bb75baa217a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25366ee923612f49687b8902256266df') in 0.020002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Support 6.fbx
-  artifactKey: Guid(4040fa151e060474d947d7347c3171a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Support 6.fbx using Guid(4040fa151e060474d947d7347c3171a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f225e4cc66c3af8862009d7c56427f') in 0.014089 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Support 3.fbx
-  artifactKey: Guid(91bd7a162421514488276a2256db0b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Support 3.fbx using Guid(91bd7a162421514488276a2256db0b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2046fc9a643c1473771652b7cca1dec') in 0.015312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Tin sheet 4.fbx
-  artifactKey: Guid(6060ab196874f214d86e0ed7873faf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Tin sheet 4.fbx using Guid(6060ab196874f214d86e0ed7873faf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572b9e04af82a9df7bb7bf4b70319f6f') in 0.020936 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Tin sheet 1.fbx
-  artifactKey: Guid(87eab165efdb5904a905f8660fb4c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Tin sheet 1.fbx using Guid(87eab165efdb5904a905f8660fb4c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf387bf2fc25076598f15a7491de1537') in 0.015867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Tin sheet 2.fbx
-  artifactKey: Guid(3622b76bc7c2f194a91649d2177c555d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Tin sheet 2.fbx using Guid(3622b76bc7c2f194a91649d2177c555d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcc403b233ab9ff13ddefea39648bbc') in 0.015605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Metal strip 3.fbx
-  artifactKey: Guid(2b73dbaad52031e4fb800bca364690b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Metal strip 3.fbx using Guid(2b73dbaad52031e4fb800bca364690b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7392c8012bdc9a6d095e0001caa252f1') in 0.020268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Support 1.fbx
-  artifactKey: Guid(0066e0d153be272479d8c871d8674aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Support 1.fbx using Guid(0066e0d153be272479d8c871d8674aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b7da804f0e1fe5c2a00f7e639651c1c') in 0.015329 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Metal strip 2.fbx
-  artifactKey: Guid(5196162eec540134b876787b16935982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Metal strip 2.fbx using Guid(5196162eec540134b876787b16935982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e0081ed8f72aa344736738fdd76faf') in 0.021313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Metal strip 4.fbx
-  artifactKey: Guid(899b6dea08edf834b97cbdd2e7d9e6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Metal strip 4.fbx using Guid(899b6dea08edf834b97cbdd2e7d9e6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82a72910443242f6432c2eb6d3c57ab') in 0.012965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Support 2.fbx
-  artifactKey: Guid(fff3fe0333bcef84c91cca1f04556744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Support 2.fbx using Guid(fff3fe0333bcef84c91cca1f04556744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c3bbd3641de45b7faa142bd134f788') in 0.014390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Support 4.fbx
-  artifactKey: Guid(0ab981d102293a541a09a11d9577d83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Support 4.fbx using Guid(0ab981d102293a541a09a11d9577d83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b6e6b4687ddc44d3e5da15b8551978') in 0.018164 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Visual assets/Slum Houses/Models/Support 5.fbx
-  artifactKey: Guid(c26d45bff4be289478d179a54fec0f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Models/Support 5.fbx using Guid(c26d45bff4be289478d179a54fec0f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e5b357c725a9ca15d283c3f6dcaa0f') in 0.014624 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.556098 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Houses
-  artifactKey: Guid(54edd505799674e449a2bdf0b436ff0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Houses using Guid(54edd505799674e449a2bdf0b436ff0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27de4161bd331134b17abcd9c1ad88a') in 0.007248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.053698 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Houses/House 1.prefab
-  artifactKey: Guid(49ff66d8237034f45b749a51d5115799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Houses/House 1.prefab using Guid(49ff66d8237034f45b749a51d5115799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1998e6da8a48b2b54bd11294a40490') in 0.043950 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Houses/House 3.prefab
-  artifactKey: Guid(6c5035be4fbcc5749aed9a0004b25c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Houses/House 3.prefab using Guid(6c5035be4fbcc5749aed9a0004b25c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207b3dfc3a0c0f80b26cb1deecff2750') in 0.041598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Houses/House 5.prefab
-  artifactKey: Guid(68247db3106e5cc4fa678a7e678cf3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Houses/House 5.prefab using Guid(68247db3106e5cc4fa678a7e678cf3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42f5b38fbb1030b5a30dd9448b7baab') in 0.051360 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Houses/House 2.prefab
-  artifactKey: Guid(5ad41694427a26f4bb2de9231d31aa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Houses/House 2.prefab using Guid(5ad41694427a26f4bb2de9231d31aa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cafe4f1d1b583386c404bfc9202ba0') in 0.068039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Visual assets/Slum Houses/Prefab/Houses/House 4.prefab
-  artifactKey: Guid(e9960e0cf23a6f244981f6a5f8b5d2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Prefab/Houses/House 4.prefab using Guid(e9960e0cf23a6f244981f6a5f8b5d2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fde6624ff1ee89dcedddf8ac648f2c2') in 0.049907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 100.819103 seconds.
-  path: Assets/Visual assets/Slum Houses/Materials
-  artifactKey: Guid(a5eea21533c11114cb3ab8143ab35150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Materials using Guid(a5eea21533c11114cb3ab8143ab35150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b492994207d121b1b9076026b318260') in 0.007158 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.086269 seconds.
-  path: Assets/Visual assets/Slum Houses/Materials/Tin sheet_DefaultMaterial_AlbedoTransparency.mat
-  artifactKey: Guid(9e3c1b07fde553c448f939bcedba1859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Materials/Tin sheet_DefaultMaterial_AlbedoTransparency.mat using Guid(9e3c1b07fde553c448f939bcedba1859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c11495a37c0409aa37817169125cb49') in 0.023188 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Visual assets/Slum Houses/Materials/wooden and metal support _DefaultMaterial_AlbedoTransparency.mat
-  artifactKey: Guid(6684a11869d219c479410dd8f5e2dd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Materials/wooden and metal support _DefaultMaterial_AlbedoTransparency.mat using Guid(6684a11869d219c479410dd8f5e2dd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a8db274ece68be03e1d35ef5c38a5e') in 0.021623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.598870 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture
-  artifactKey: Guid(4d0958227d16b874d9d6b97cc906c748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture using Guid(4d0958227d16b874d9d6b97cc906c748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a9048292d62c22282065216675abdd') in 0.007452 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.068147 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture/Tin sheet_DefaultMaterial_AlbedoTransparency.png
-  artifactKey: Guid(33d2a1578f4a4914dbdff3f6cf2de389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture/Tin sheet_DefaultMaterial_AlbedoTransparency.png using Guid(33d2a1578f4a4914dbdff3f6cf2de389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c00bbf67ade4002c58278aee958ce3') in 0.022058 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture/wooden and metal support _DefaultMaterial_AlbedoTransparency.png
-  artifactKey: Guid(0fcb17bd9acb80a4bb4477418e277c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture/wooden and metal support _DefaultMaterial_AlbedoTransparency.png using Guid(0fcb17bd9acb80a4bb4477418e277c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d979186baaec38029830a00e0bf4be') in 0.017047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture/Tin sheet_DefaultMaterial_MetallicSmoothness.png
-  artifactKey: Guid(3ce865e64eb7b7f4aa9e0a5f67fc09bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture/Tin sheet_DefaultMaterial_MetallicSmoothness.png using Guid(3ce865e64eb7b7f4aa9e0a5f67fc09bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485239be79a21f05415e5354493f3621') in 0.032088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture/wooden and metal support _DefaultMaterial_Normal.png
-  artifactKey: Guid(36267156c36c0f64eaae06ecdd244190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture/wooden and metal support _DefaultMaterial_Normal.png using Guid(36267156c36c0f64eaae06ecdd244190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af13a6b899dcb61d13886ee359a719d') in 0.057566 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture/wooden and metal support _DefaultMaterial_MetallicSmoothness.png
-  artifactKey: Guid(e3a04f26abf2b374eb13b83db8643eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture/wooden and metal support _DefaultMaterial_MetallicSmoothness.png using Guid(e3a04f26abf2b374eb13b83db8643eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059addb9e8e11efcded25d9703c6a487') in 0.018321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Visual assets/Slum Houses/Texture/Tin sheet_DefaultMaterial_Normal.png
-  artifactKey: Guid(403cd80e6ca2f314bb29b52342560089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Slum Houses/Texture/Tin sheet_DefaultMaterial_Normal.png using Guid(403cd80e6ca2f314bb29b52342560089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d11051be48651376e762363d2b8e0b') in 0.028265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.652865 seconds.
-  path: Assets/Visual assets/Game objects/SlumHouse
-  artifactKey: Guid(c9d43412b67f00e40bbbdf9cd24e40d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Game objects/SlumHouse using Guid(c9d43412b67f00e40bbbdf9cd24e40d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87eab949a1e548298d7d1c061d366d74') in 0.007326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 127.694349 seconds.
-  path: Assets/Visual assets/Game objects/Slum Houses
-  artifactKey: Guid(7dd6cff4a549ce64a8308defbd40fd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Game objects/Slum Houses using Guid(7dd6cff4a549ce64a8308defbd40fd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28a0534ec97ba135210d7f03ed819bc') in 0.003269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 79.812125 seconds.
-  path: Assets/Visual assets/Game objects/Slum Houses
-  artifactKey: Guid(732caf786df261d428cbf846803a89cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual assets/Game objects/Slum Houses using Guid(732caf786df261d428cbf846803a89cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ec9d93ec8512647e7450463229ed4e') in 0.002887 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005016 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.103 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1103ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (1482ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (922ms)
-			LoadAssemblies (94ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1270ms)
+			LoadAssemblies (97ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (318ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (343ms)
+			SetupTypeCache (413ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (519ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3322 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.6 MB.
-System memory in use after: 172.8 MB.
+Unloading 3341 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.6 MB.
+System memory in use after: 147.8 MB.
 
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3934.
-Total: 6.583000 ms (FindLiveObjects: 0.398300 ms CreateObjectMapping: 0.083500 ms MarkObjects: 6.062100 ms  DeleteObjects: 0.037800 ms)
+Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 3779.
+Total: 7.301800 ms (FindLiveObjects: 0.389600 ms CreateObjectMapping: 0.227600 ms MarkObjects: 6.523800 ms  DeleteObjects: 0.159500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -526,4 +132,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Visual assets/Game objects/Monster/Ch25_nonPBR@Walking.fbx
+  artifactKey: Guid(88ad16c833645d240b9042508d6d9b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Visual assets/Game objects/Monster/Ch25_nonPBR@Walking.fbx using Guid(88ad16c833645d240b9042508d6d9b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227515f2b22d9d4765a0c07a3022df17') in 0.234920 seconds 
+  Import took 0.241929 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
