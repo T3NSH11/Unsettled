@@ -18,5 +18,10 @@ public class SearchForPlayer : AbominationState
         {
             AbominationState.SwitchState(new GoToPath());
         }
+
+        if (Vector3.Distance(AbominationState.AbominationPos.transform.position, AbominationState.player.transform.position) < AbominationState.AbominationAttackRange)
+        {
+            AbominationState.SwitchState(new Attack());
+        }
     }
 }

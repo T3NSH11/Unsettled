@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed;
     public float SprintSpeed;
-    float MoveSpeed = 5;
+    public float MoveSpeed = 3;
     public float gravity;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -17,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask groundMask;
     Vector3 velocity;
-    bool isGrounded;
+    public bool isGrounded;
 
 
     private void Start()
@@ -34,12 +35,12 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && gameObject.GetComponent<Stats>().stamina > 0)
         {
             MoveSpeed = SprintSpeed;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift) || gameObject.GetComponent<Stats>().stamina <  0)
         {
             MoveSpeed = speed;
         }
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = jumpdist;
         }
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(Input.GetKeyDown(KeyCode.F))
         {
             if(flash.GetComponent<Light>().enabled == false)
             {

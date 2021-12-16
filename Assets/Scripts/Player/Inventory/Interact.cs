@@ -12,12 +12,12 @@ public class Interact : MonoBehaviour
     public LayerMask WallMask;
     public Vector3 directionToItem;
     public GameObject ItemInView;
+    public GameObject HP_UI;
+    public GameObject ST_UI;
     public Transform ItemTransform;
     public Interactables ActiveItem;
+    public Interactables UsableItem;
     public Stack<Interactables> ItemStack;
-    public Stack<GameObject> ItemUI;
-    public RectTransform UsabeItemUITransform;
-    public RectTransform ItemUITransform;
 
     private void Start()
     {
@@ -48,13 +48,32 @@ public class Interact : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 ActiveItem.Action(this);
+                UsableItem = ActiveItem;
                 Destroy(ItemInView);
+                ST_UI.SetActive(false);
+                HP_UI.SetActive(false);
             }
         }
 
         if (Input.GetKeyDown(KeyCode.F) && ItemStack.Count != 0)
         {
             ItemStack.Pop().Use(this);
+            UsableItem = ItemStack.Peek();
+            ST_UI.SetActive(false);
+            HP_UI.SetActive(false);
+        }
+
+        if (ItemStack.Count != 0)
+        {
+            if (UsableItem.GetType() == typeof(HealthPickup))
+            {
+                HP_UI.SetActive(true);
+            }
+
+            if (UsableItem.GetType() == typeof(StaminaPickup))
+            {
+                ST_UI.SetActive(true);
+            }
         }
     }
 

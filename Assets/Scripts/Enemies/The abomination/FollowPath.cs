@@ -12,6 +12,8 @@ public class FollowPath : AbominationState
         var object_Rotation = Quaternion.LookRotation(AbominationState.current_SetPath.pathNodes[AbominationState.currentPath_NodeID].position - AbominationState.transform.position);
         AbominationState.transform.rotation = Quaternion.Slerp(AbominationState.transform.rotation, object_Rotation, Time.deltaTime * AbominationState.rotationSpeed);
 
+        AbominationState.AbominationPos.transform.rotation = AbominationState.transform.rotation;
+
         AbominationState.SearchTime = 0;
 
         if (node_Distance <= AbominationState.waypointDist)
@@ -27,6 +29,11 @@ public class FollowPath : AbominationState
         if (AbominationState.PlayerDetected)
         {
             AbominationState.SwitchState(new ChasePlayer());
+        }
+
+        if (Vector3.Distance(AbominationState.AbominationPos.transform.position, AbominationState.player.transform.position) < AbominationState.AbominationAttackRange)
+        {
+            AbominationState.SwitchState(new Attack());
         }
     }
 }

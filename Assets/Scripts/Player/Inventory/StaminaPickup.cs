@@ -8,7 +8,6 @@ public class StaminaPickup : Interactables
     {
         Debug.Log("ST");
         Interactable.ItemStack.Push(this);
-        
     }
 
     public override void Use(Interact Interacables)

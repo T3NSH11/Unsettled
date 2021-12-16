@@ -29,7 +29,6 @@ public class TheJesterStateMachine : MonoBehaviour
         JesterLoc = Random.Range(0, JesterSpawnPoints.Length);
         Debug.Log(CurrentState);
         JesterTimer += Time.deltaTime;
-        Debug.Log(CurrentState);
     }
 
     public void SwitchState(TheJesterState JesterState)

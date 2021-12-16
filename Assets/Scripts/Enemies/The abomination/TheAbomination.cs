@@ -22,6 +22,7 @@ public class TheAbomination : MonoBehaviour
     public GameObject[] patrolPaths;
     public GameObject[] PathNodes;
     public GameObject NearestNode;
+    public GameObject AbominationPos;
     public int currentPath_NodeID = 0;
     public FollowWaypoints current_SetPath;
 
@@ -44,6 +45,7 @@ public class TheAbomination : MonoBehaviour
 
         DistanceToLost = Vector3.Distance(gameObject.transform.position, PlayerLostLoc);
         currentstate.AbominationStateUpdate(this);
+        Debug.Log(currentstate);
     }
     
     public void SwitchState(AbominationState abominationState)
