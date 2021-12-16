@@ -12,6 +12,6 @@ public class HealthPickup : Interactables
 
     public override void Use(Interact Interacable)
     {
-        Debug.Log("HP Use");
+        Interacable.player.GetComponent<Stats>().health += 0.25f;
     }
 }

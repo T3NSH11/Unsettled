@@ -18,6 +18,7 @@ public class Interact : MonoBehaviour
     public Interactables ActiveItem;
     public Interactables UsableItem;
     public Stack<Interactables> ItemStack;
+    public GameObject player;
 
     private void Start()
     {

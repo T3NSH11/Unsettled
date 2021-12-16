@@ -10,8 +10,8 @@ public class StaminaPickup : Interactables
         Interactable.ItemStack.Push(this);
     }
 
-    public override void Use(Interact Interacables)
+    public override void Use(Interact Interacable)
     {
-        Debug.Log("ST Use");
+        Interacable.player.GetComponent<Stats>().stamina += 1;
     }
 }

@@ -6,9 +6,7 @@ public class Attack : AbominationState
 {
     public override void AbominationStateUpdate(TheAbomination AbominationState)
     {
-        AbominationState.DeathUI.SetActive(true);
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
+        AbominationState.player.GetComponent<Stats>().health -= 0.2f;
+        AbominationState.SwitchState(new Stunned());
     }
 }
