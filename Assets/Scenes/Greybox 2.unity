@@ -2042,7 +2042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2015275823680899104, guid: fa8d01d63a7c8234fa68a1fdc842a671, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 93.855
+      value: 113.33
       objectReference: {fileID: 0}
     - target: {fileID: 2015275823680899104, guid: fa8d01d63a7c8234fa68a1fdc842a671, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2050,7 +2050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2015275823680899104, guid: fa8d01d63a7c8234fa68a1fdc842a671, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.769
+      value: 102.17
       objectReference: {fileID: 0}
     - target: {fileID: 2015275823680899104, guid: fa8d01d63a7c8234fa68a1fdc842a671, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10744,6 +10744,7 @@ MonoBehaviour:
   flash: {fileID: 1878529335}
   healthbar: {fileID: 234825627}
   staminabar: {fileID: 314196885}
+  deathUI: {fileID: 0}
 --- !u!143 &1516698510 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 2015275823680899106, guid: fa8d01d63a7c8234fa68a1fdc842a671, type: 3}
@@ -14362,6 +14363,7 @@ MonoBehaviour:
   AbominationPos: {fileID: 1970609922}
   currentPath_NodeID: 0
   current_SetPath: {fileID: 1933502328}
+  animator: {fileID: 1134257749}
 --- !u!54 &1957201612
 Rigidbody:
   m_ObjectHideFlags: 0
