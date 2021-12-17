@@ -6,6 +6,8 @@ public class FollowPath : AbominationState
 {
     public override void AbominationStateUpdate(TheAbomination AbominationState)
     {
+        AbominationState.animator.SetBool("Iswalking", true);
+        AbominationState.animator.SetBool("IsRunning", false);
         float node_Distance = Vector3.Distance(AbominationState.current_SetPath.pathNodes[AbominationState.currentPath_NodeID].position, AbominationState.transform.position);
         AbominationState.transform.position = Vector3.MoveTowards(AbominationState.transform.position, AbominationState.current_SetPath.pathNodes[AbominationState.currentPath_NodeID].position, Time.deltaTime * AbominationState.AbominationPatrolSpeed);
 
@@ -28,11 +30,13 @@ public class FollowPath : AbominationState
 
         if (AbominationState.PlayerDetected)
         {
+            AbominationState.animator.SetTrigger("player found");
             AbominationState.SwitchState(new ChasePlayer());
         }
 
         if (Vector3.Distance(AbominationState.AbominationPos.transform.position, AbominationState.player.transform.position) < AbominationState.AbominationAttackRange)
         {
+            AbominationState.animator.SetTrigger("Attack");
             AbominationState.SwitchState(new Attack());
         }
     }

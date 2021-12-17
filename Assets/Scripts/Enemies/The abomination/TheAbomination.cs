@@ -25,6 +25,7 @@ public class TheAbomination : MonoBehaviour
     public GameObject AbominationPos;
     public int currentPath_NodeID = 0;
     public FollowWaypoints current_SetPath;
+    public Animator animator;
 
     void Start()
     {

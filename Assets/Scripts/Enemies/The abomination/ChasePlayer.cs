@@ -6,6 +6,8 @@ public class ChasePlayer : AbominationState
 {
     public override void AbominationStateUpdate(TheAbomination AbominationState)
     {
+        AbominationState.animator.SetBool("IsRunning", true);
+        AbominationState.animator.SetBool("Iswalking", false);
         AbominationState.AbominationPos.transform.position = Vector3.MoveTowards(AbominationState.AbominationPos.transform.position, AbominationState.player.transform.position, Time.deltaTime * AbominationState.AbominationChaseSpeed);
         var object_Rotation = Quaternion.LookRotation(AbominationState.player.transform.position - AbominationState.AbominationPos.transform.position);
         AbominationState.AbominationPos.transform.rotation = Quaternion.Slerp(AbominationState.AbominationPos.transform.rotation, object_Rotation, Time.deltaTime * AbominationState.rotationSpeed);
@@ -22,6 +24,7 @@ public class ChasePlayer : AbominationState
 
         if (Vector3.Distance(AbominationState.AbominationPos.transform.position, AbominationState.player.transform.position) < AbominationState.AbominationAttackRange)
         {
+            AbominationState.animator.SetTrigger("Attack");
             AbominationState.SwitchState(new Attack());
         }
     }

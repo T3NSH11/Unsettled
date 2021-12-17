@@ -11,6 +11,7 @@ public class Stunned : AbominationState
         if (stunntimer > 5)
         {
             stunntimer = 0;
+            AbominationState.animator.SetTrigger("StunnedOff");
             AbominationState.SwitchState(new GoToPath());
         }
     }
