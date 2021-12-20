@@ -26,6 +26,7 @@ public class TheAbomination : MonoBehaviour
     public int currentPath_NodeID = 0;
     public FollowWaypoints current_SetPath;
     public Animator animator;
+    public float animationwait = 0;
 
     void Start()
     {

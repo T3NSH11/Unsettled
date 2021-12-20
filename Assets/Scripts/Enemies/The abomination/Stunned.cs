@@ -8,7 +8,7 @@ public class Stunned : AbominationState
     public override void AbominationStateUpdate(TheAbomination AbominationState)
     {
         stunntimer += Time.deltaTime;
-        if (stunntimer > 5)
+        if (stunntimer > 12)
         {
             stunntimer = 0;
             AbominationState.animator.SetTrigger("StunnedOff");

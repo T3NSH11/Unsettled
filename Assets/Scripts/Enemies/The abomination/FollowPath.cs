@@ -28,7 +28,7 @@ public class FollowPath : AbominationState
             AbominationState.currentPath_NodeID = 0;
         }
 
-        if (AbominationState.PlayerDetected)
+        if (AbominationState.fov.PlayerDetected)
         {
             AbominationState.animator.SetTrigger("player found");
             AbominationState.SwitchState(new ChasePlayer());
