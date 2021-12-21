@@ -25,11 +25,11 @@ public class FollowWaypoints : MonoBehaviour
         for (int i = 0; i < pathNodes.Count; i++)
         {
             Vector3 currentNode_Pos = pathNodes[i].position;
+            Gizmos.DrawSphere(currentNode_Pos, 0.2f);
             if (i > 0)
             {
                 Vector3 prevNode_Pos = pathNodes[i - 1].position;
                 Gizmos.DrawLine(prevNode_Pos, currentNode_Pos);
-                Gizmos.DrawSphere(currentNode_Pos, 0.2f);
             }
         }
     }
