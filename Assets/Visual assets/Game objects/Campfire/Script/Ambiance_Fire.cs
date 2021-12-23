@@ -33,6 +33,6 @@ public class Ambiance_Fire : MonoBehaviour {
 		
 		// Compute the average of the array and assign it to the
 		// light intensity.
-		GetComponent<Light>().intensity = sum / smoothing.Length;
+		GetComponent<Light>().intensity = (sum / smoothing.Length) * 4;
 	}
 }
