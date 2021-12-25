@@ -10,7 +10,7 @@ public class CheckpointsManager : MonoBehaviour
     public Stack<GameObject> Checkpoints;
     public GameObject LastCheckpoint;
     public GameObject ChckCount;    
-    int Collcheckpoints;
+    public int Collcheckpoints;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");

@@ -7,7 +7,7 @@ public class Checkpoints : MonoBehaviour
     public GameObject checkpointsManager;
     public GameObject player;
     public float checkpointrange;
-    bool collected;
+    public bool collected;
 
     void Start()
     {
@@ -19,8 +19,10 @@ public class Checkpoints : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, transform.position) < checkpointrange && collected == false)
         {
+            
             checkpointsManager.GetComponent<CheckpointsManager>().Checkpoints.Push(gameObject);
             collected = true;
+            player.GetComponent<Stats>().SaveGame();
         }
     }
 }

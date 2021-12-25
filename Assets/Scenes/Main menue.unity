@@ -432,7 +432,6 @@ Terrain:
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 2100000, guid: 5d95f61ade281ba4a8e5b528cbd81ddb, type: 2}
   m_BakeLightProbesForTrees: 1
@@ -2069,7 +2068,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5775780812976843856, guid: f9830fd130f9b5643b26bba4cf96ff38, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9830fd130f9b5643b26bba4cf96ff38, type: 3}
 --- !u!1 &1837247162
 GameObject:

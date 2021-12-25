@@ -11,19 +11,10 @@ public class Ui : MonoBehaviour
     public GameObject MainMenu;
     public Scene GameScene;
     public Scene MainMenuScene;
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
 
     public void StartGame()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Greybox 2");
     }
 
@@ -34,7 +25,7 @@ public class Ui : MonoBehaviour
 
     public void ContinueGame()
     {
-
+        SceneManager.LoadScene("Greybox 2");
     }
 
     public void ControlsGame()

@@ -11,6 +11,7 @@ TagManager:
   - JesterSpawnPoint
   - CheckpointsManager
   - ChckCount
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
