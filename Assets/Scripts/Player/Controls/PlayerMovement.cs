@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public float jumpdist;
     public GameObject flash;
-
+    public GameObject HUD;
+    public GameObject PauseMenuOBJ;
     public LayerMask groundMask;
     Vector3 velocity;
     public bool isGrounded;
@@ -73,6 +74,15 @@ public class PlayerMovement : MonoBehaviour
                 flash.GetComponent<Light>().enabled = false;
             }
             
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseMenuOBJ.SetActive(true);
+            HUD.SetActive(false);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            Time.timeScale = 0;
         }
 
         float x = Input.GetAxis("Horizontal");
