@@ -24,11 +24,6 @@ public class Stats : MonoBehaviour
     void Start()
     {
         Checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
-
-        if(PlayerPrefs.GetInt("Checkpointcount") > 0)
-        {
-            LoadGame();
-        }
     }
 
     void Update()
@@ -87,18 +82,5 @@ public class Stats : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPosZ", transform.position.y);
 
         PlayerPrefs.SetInt("Checkpointcount", CheckpointManager.GetComponent<CheckpointsManager>().Collcheckpoints);
-    }
-
-    public void LoadGame()
-    {
-        for (int i = 0; i < Checkpoints.Length; i++)
-        {
-            Checkpoints[i].GetComponent<Checkpoints>().collected = (PlayerPrefs.GetInt("Checkpoint" + i + "collected?") != 0);
-        }
-
-        Abomination.transform.position = new Vector3 (PlayerPrefs.GetFloat("AbominationPosX"), PlayerPrefs.GetFloat("AbominationPosY"), PlayerPrefs.GetFloat("AbominationPosZ"));
-        Jester.transform.position = new Vector3(PlayerPrefs.GetFloat("JesterPosX"), PlayerPrefs.GetFloat("JesterPosY"), PlayerPrefs.GetFloat("JesterPosZ"));
-        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"), PlayerPrefs.GetFloat("PlayerPosZ"));
-        CheckpointManager.GetComponent<CheckpointsManager>().Collcheckpoints = PlayerPrefs.GetInt("Checkpointcount");
     }
 }
