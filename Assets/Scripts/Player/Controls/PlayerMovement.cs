@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = jumpdist;
         }
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.Mouse2))
         {
             if(flash.GetComponent<Light>().enabled == false)
             {
